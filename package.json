@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "node MCAData.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.1",
+    "express": "^5.1.0"
+  }
+}
