@@ -1,0 +1,11 @@
+services:
+  roc:
+    build: .
+    image: roc-api
+    ports:
+      - "${PORT:-4000}:4000"
+    environment:
+      PORT: 4000
+      SCODE_GETCIN: ${SCODE_GETCIN:?set SCODE_GETCIN in .env}
+      SCODE_MASTER: ${SCODE_MASTER:?set SCODE_MASTER in .env}
+    restart: unless-stopped
