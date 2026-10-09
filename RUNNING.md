@@ -93,6 +93,8 @@ How to choose the two passwords:
 - If you already have an app (client) that calls this API and sends an `SCode`, use the exact values that app sends.
 - If not, make up two values yourself: 16 to 32 letters and numbers, for example `Kp8x2mQ9vL4tR7wZ`. Avoid spaces, quotes, `#` and `$`.
 
+Nobody needs to send you these values. You choose them, and the only requirement is that the app calling the API sends the same `SCode` values that you put in `.env`. If you make up new values, set the same ones in your app.
+
 Rules for the file:
 - No spaces around `=`, and no quotation marks.
 - The file must be named exactly `.env`. Notepad sometimes saves it as `.env.txt`. If that happens, rename it. In Notepad, set "Save as type" to "All Files".
